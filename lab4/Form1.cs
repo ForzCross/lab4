@@ -26,10 +26,11 @@ namespace lab4
         private void новоеРаспознаваниеToolStripMenuItem_Click(object sender, EventArgs e)
         {
             OpenFileDialog fileDialog = new OpenFileDialog();
-            fileDialog.Filter = "bmp|*.bmp|png|*.png|jpg|*.jpg";
+            fileDialog.Filter = "жипег|*.jpg|бмп|*.bmp|пенг|*.png";
             if(fileDialog.ShowDialog() == DialogResult.OK)
             {
                 pictureBox1.Image = Bitmap.FromFile(fileDialog.FileName);
+                AppData.image = pictureBox1.Image;
             }
         }
     }
