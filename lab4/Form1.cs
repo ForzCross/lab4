@@ -29,8 +29,8 @@ namespace lab4
             fileDialog.Filter = "жипег|*.jpg|бмп|*.bmp|пенг|*.png";
             if(fileDialog.ShowDialog() == DialogResult.OK)
             {
-                pictureBox1.Image = Bitmap.FromFile(fileDialog.FileName);
-                AppData.image = pictureBox1.Image;
+               // pictureBox1.Image = Bitmap.FromFile(fileDialog.FileName);
+               // AppData.image = pictureBox1.Image;
             }
         }
     }
